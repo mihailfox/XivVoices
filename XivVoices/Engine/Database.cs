@@ -28,7 +28,7 @@ namespace XivVoices.Engine
         public string DirectoryPath { get; set; }
         public string VoiceFilesPath { get { return Path.Combine(DirectoryPath, "Data"); } }
         public string ReportsPath { get { return Path.Combine(DirectoryPath, "Reports"); } }
-        public string ToolsPath { get { return "C:/XIV_Voices/Tools";  } }
+        public string ToolsPath { get { return Path.Combine(DirectoryPath, "Tools"); } }
         public string Firstname { get; } = "_FIRSTNAME_";
         public string Lastname { get; } = "_LASTNAME_";
         public Dictionary<string, XivNPC> NpcData { get; set; }
